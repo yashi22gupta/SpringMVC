@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    Message is: ${message}
+    Message is: ${userForm.firstname}
 </body>
 </html>
