@@ -2,9 +2,11 @@ package com.yashi.Controller;
 
 import com.yashi.Modal.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.HttpServletBean;
 
 import java.util.Map;
 
@@ -13,7 +15,7 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping(value = "/RegisterUser")
-public class HelloWorldController {
+public class HelloWorldController{
     /*@RequestMapping("/hello")
     public ModelAndView helloWorld() {
         String message = "HELLO SPRING MVC HOW R U";
@@ -25,25 +27,21 @@ public class HelloWorldController {
         String message = "HELLO SPRING MVC HOW R U";
         return new ModelAndView("Register", "message", message);
     }*/
-
+/*
         @RequestMapping(method = RequestMethod.GET)
-        public String viewRegistration(Map<String, Object> model) {
+        public String viewRegistration(Model model) {
             User userForm = new User();
-            model.put("userForm", userForm);
+            model.addAttribute("userForm",userForm);
+            return "Register";
+        }*/
 
-            return "HelloPage";
-        }
-
-        @RequestMapping(method = RequestMethod.POST)
-        public String processRegistration(@ModelAttribute("userForm") User user,
-                                          Map<String, Object> model) {
+    @RequestMapping(method = RequestMethod.POST)
+        public String processRegistration() {
 
             // implement your own registration logic here...
 
             // for testing purpose:
-            System.out.println("username: " + user.getUsername());
-            System.out.println("password: " + user.getPassword());
-            System.out.println("email: " + user.getEmail());
+
 
             return ("HelloPage");
         }
