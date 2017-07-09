@@ -6,27 +6,27 @@ import java.util.Date;
  * Created by yashi on 09-07-2017.
  */
 public class User {
-    private String Firstname;
-    private String Lastname;
+    private String fname;
+    private String lname;
     private String username;
     private String password;
     private String email;
-    private String mobile_no;
+    private String mobileno;
 
-    public String getFirstname() {
-        return Firstname;
+    public String getFname() {
+        return fname;
     }
 
-    public void setFirstname(String firstname) {
-        Firstname = firstname;
+    public void setFname(String fname) {
+        this.fname = fname;
     }
 
-    public String getLastname() {
-        return Lastname;
+    public String getLname() {
+        return lname;
     }
 
-    public void setLastname(String lastname) {
-        Lastname = lastname;
+    public void setLname(String lname) {
+        this.lname = lname;
     }
 
     public String getUsername() {
@@ -53,11 +53,11 @@ public class User {
         this.email = email;
     }
 
-    public String getMobile_no() {
-        return mobile_no;
+    public String getMobileno() {
+        return mobileno;
     }
 
-    public void setMobile_no(String mobile_no) {
-        this.mobile_no = mobile_no;
+    public void setMobileno(String mobileno) {
+        this.mobileno = mobileno;
     }
 }

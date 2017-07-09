@@ -1,4 +1,3 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: yashi
@@ -7,9 +6,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<!DOCTYPE html>
+<%@ taglib prefix="form"
+           uri="http://www.springframework.org/tags/form"%>
+
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -29,7 +28,7 @@
 </form>--%>
 
 <div align="center">
-    <form:form action="RegisterUser" method="post">
+    <form:form action="save" method="post" modelAttribute="userForm">
         <table border="0">
             <tr>
                 <td colspan="2" align="center"><h2>User Registration</h2></td>

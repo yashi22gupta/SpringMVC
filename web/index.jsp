@@ -54,7 +54,7 @@
 <body >
 
 <h1>HOME PAGE</h1>
-<a href="Register.jsp">Reister</a>
+<a href="register">Register</a>
 <a href="Login">Login</a>
 </body>
 </html>
